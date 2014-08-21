@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myfirstapp.DisplayMessageActivity" >
+    <item android:id="@+id/sort_dist"
+          android:title="@string/sort_dist_word"
+          app:showAsAction="always|withText" />
+    <item android:id="@+id/sort_time"
+          android:title="@string/sort_time_word"
+          app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+</menu>

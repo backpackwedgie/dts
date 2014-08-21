@@ -1,0 +1,175 @@
+<ScrollView    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.downthestreetapp.downthestreet.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+    <TextView android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/search_title"
+        android:textSize="20sp" />
+    <TextView android:id="@+id/type_heading"
+   	    android:layout_below="@+id/title"
+   	    android:gravity="center"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="16sp"
+   	    android:text="@string/type_heading" />
+    <View
+        android:id="@+id/checkbox_holder"
+        android:layout_below="@+id/type_heading"
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="#04B404" />
+    <CheckBox android:id="@+id/type_box_food"
+        android:layout_below="@+id/checkbox_holder"
+        android:layout_toLeftOf="@+id/checkbox_holder"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_food" />
+   	<CheckBox android:id="@+id/type_box_drinks"
+   	    android:layout_below="@+id/checkbox_holder"
+        android:layout_toRightOf="@+id/checkbox_holder"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_drinks" />
+   	<View
+        android:id="@+id/checkbox_holder2"
+        android:layout_below="@+id/type_box_drinks"
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="#04B404" />
+   	<CheckBox android:id="@+id/type_box_music"
+        android:layout_below="@+id/checkbox_holder2"
+        android:layout_toLeftOf="@+id/checkbox_holder2"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_music" />
+   	<CheckBox android:id="@+id/type_box_other"
+   	    android:layout_below="@+id/checkbox_holder2"
+        android:layout_toRightOf="@+id/checkbox_holder2"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_other" />
+   	<View 
+   	    android:id="@+id/divider1"
+   	    android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#04B404"
+    	android:layout_below="@+id/type_box_other"/>
+   	<TextView android:id="@+id/time_heading"
+   	    android:layout_below="@+id/divider1"
+   	    android:gravity="center"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="16sp"
+   	    android:text="@string/time_heading" />
+   	<View
+        android:id="@+id/holder3"
+        android:layout_below="@+id/time_heading"
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:background="#04B404" />
+   	<TextView 
+   	    android:id="@+id/from_time_spinner_prompt"
+   	    android:layout_below="@+id/holder3"
+   	    android:layout_toLeftOf="@+id/holder3"
+   	    android:textSize="14sp"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:text="@string/from_time_prompt"
+   	    android:padding="10dip"/>
+   	<Spinner
+        android:id="@+id/from_time_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/holder3"
+        android:layout_toRightOf="@+id/holder3"
+        android:entries="@array/from_time_box"
+        android:prompt="@string/from_time_prompt" />
+   	<TextView 
+   	    android:id="@+id/to_time_spinner_prompt"
+   	    android:layout_below="@+id/from_time_spinner"
+   	    android:layout_toLeftOf="@+id/holder3"
+   	    android:textSize="14sp"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:text="@string/to_time_prompt"
+   	    android:padding="10dip"/>
+   	<Spinner
+        android:id="@+id/to_time_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_time_spinner"
+        android:layout_toRightOf="@+id/holder3"
+        android:entries="@array/to_time_box"
+        android:prompt="@string/to_time_prompt" />
+   	<View
+   	    android:id="@+id/divider2"
+   	    android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#04B404"
+    	android:layout_below="@+id/to_time_spinner"/>
+   	<TextView
+   	    android:id="@+id/place_heading"
+   	    android:layout_below="@+id/divider2"
+   	    android:gravity="center"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="16sp"
+   	    android:text="@string/place_heading" />
+   	<Spinner 
+   	    android:id="@+id/place_spinner"
+   	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_heading"
+        android:layout_centerInParent="true"
+        android:entries="@array/places" />
+   	<View 
+   	    android:id="@+id/divider3"
+   	    android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:background="#04B404"
+    	android:layout_below="@+id/place_spinner"/>
+   	<TextView
+   	    android:id="@+id/keyword_heading"
+   	    android:layout_below="@+id/divider3"
+   	    android:gravity="center"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:textSize="16sp"
+   	    android:text="@string/keyword_heading" />
+   	<EditText 
+   	    android:id="@+id/keyword_box"
+   	    android:layout_below="@+id/keyword_heading"
+   	    android:gravity="center"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:inputType="text" />
+    <Button android:id="@+id/mysql_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_button"
+        android:layout_below="@+id/keyword_box"
+        android:layout_centerHorizontal="true" />
+    <TextView android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</ScrollView>

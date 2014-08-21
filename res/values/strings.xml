@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Down the Street</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Enter a message.</string>
+    <string name="button_send">Send</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Search</string>
+    <string name="title_activity_display_message">Results</string>
+    <string name="search_button">Search</string>
+    <string name="desc">Good.</string>
+    <string name="sort_dist_word">Distance</string>
+    <string name="sort_time_word">Time</string>
+    <string name="search_title">Search</string>
+	<string name="type_food">Food</string>
+	<string name="type_drinks">Drinks</string>
+	<string name="type_music">Music</string>
+	<string name="type_other">Other</string>
+	<string name="type_heading">Choose Types</string>
+	<string name="time_heading">Choose Times</string>
+	<string name="place_heading">Choose Place</string>
+	<string name="keyword_heading">Keywords</string>
+	<string-array name="from_time_box">
+        <item>now</item>
+        <item>1 hour from now</item>
+        <item>5 hours from now</item>
+        <item>12 hours from now</item>
+        <item>tomorrow</item>
+        <item>next week</item>
+        <item>next month</item>
+        <item>next year</item>
+    </string-array>
+    <string-array name="to_time_box">
+        <item>1 hour from now</item>
+        <item>5 hours from now</item>
+        <item>12 hours from now</item>
+        <item>tomorrow</item>
+        <item>next week</item>
+        <item>next month</item>
+        <item>next year</item>
+        <item>forever</item>
+    </string-array>
+    <string-array name="places">
+        <item>Near me</item>
+        <item>Union Valley</item>
+        <item>Quinlan</item>
+        <item>Rockwall Harbor</item>
+    </string-array>
+    <string name="from_time_prompt">Starting from</string>
+    <string name="to_time_prompt">and ending</string>
+</resources>
